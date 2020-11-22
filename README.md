@@ -1,22 +1,22 @@
-#Caesar Cypher
+# Caesar Cypher
 The Caesar Cipher technique is one of the earliest and simplest method of encryption technique. It’s simply a type of substitution cipher, i.e., each letter of a given text is replaced by a letter some fixed number of positions down the alphabet. 
 each letter is shifted a certain number of places also known as a key, down the alphabet.  For example, with a shift of 1, A would be replaced by B, B would become C, and so on.
-##Author
+## Author
 IYUMVA Josue
 
-##Project Setup Instructions
+## Project Setup Instructions
 * Install Java Software Development Kit also known as Java-SDK
 *install Java 
 * install Gradle(is a program that manages a project's dependencies.)
 
-##Tchnology Used
+## Technology Used
 *IntelliJ IDEA(as editor).
 *Java(as language).
 
-##Known Bugs
+## Known Bugs
 No bugs...
 
-##B.D.D(Behavior Development )
+## B.D.D(Behavior Driven Development)
 
 |   Behavior   |    Input   |   Output  |
 |---|---|---|
