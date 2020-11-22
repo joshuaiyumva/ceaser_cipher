@@ -1,5 +1,6 @@
 public class Cipher {
     public static final String myAlphabets = "abcdefghijklmnopqrstuvwxyz";
+
     public static String encryption(String plainText, int myKey){
         plainText = plainText.toLowerCase();
         String cipherText = "";

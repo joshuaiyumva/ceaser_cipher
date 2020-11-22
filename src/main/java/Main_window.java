@@ -1,35 +1,31 @@
-import java.io.Console;
+import java.util.Scanner;
 public class Main_window {
     public static void main(String[] args)
     {
+        Scanner s = new Scanner(System.in);
         System.out.println("Welcome to my Ceaser Cipher App");
         for ( ;; )
         {
-            System.out.println("Please make your choice...\n 1.Encryption \t 2.Decryption \t 3.Exit program" );
-            Console c = System.console();
-            String choice = c.readLine();
-            int myChoice = Integer.parseInt(choice);
+            System.out.println("Please make a choice...\n 1.Encryption \t 2.Decryption \t 3.Exit program\n" );
+
+            Integer myChoice = s.nextInt();
             Cipher ceaser_cipher = new Cipher();
             if (myChoice == 1)
             {
-                Console m = System.console();
                 System.out.println("Enter your string to encrypt");
-                String message = m.readLine();
-                System.out.println("Enter Key");
-                Console k = System.console();
-                String shiftKey = k.readLine();
-                Integer key = Integer.parseInt(shiftKey);
+                String message = new String();
+                message = s.next();
+                System.out.println("Enter Key (Key must be between 0 to 25)");
+                int key = s.nextInt();
                 System.out.println(ceaser_cipher.encryption(message, key));
             }
             else if (myChoice == 2)
             {
-                Console m = System.console();
                 System.out.println("Enter your string to decrypt");
-                String message = m.readLine();
-                System.out.println("Enter Key used for the encryption");
-                Console k = System.console();
-                String shiftKey = k.readLine();
-                Integer key = Integer.parseInt(shiftKey);
+                String message = new String();
+                message = s.next();
+                System.out.println("Enter Key used for the encryption (Key must be between 0 to 25)");
+                int key = s.nextInt();
                 System.out.println(ceaser_cipher.decryption(message, key));
             }
             else if (myChoice == 3)
