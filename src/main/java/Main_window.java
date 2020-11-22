@@ -1,5 +1,4 @@
 import java.io.Console;
-import java.util.Scanner;
 public class Main_window {
     public static void main(String[] args)
     {
@@ -32,7 +31,13 @@ public class Main_window {
                 String shiftKey = k.readLine();
                 Integer key = Integer.parseInt(shiftKey);
                 System.out.println(ceaser_cipher.decryption(message, key));
-
+            }
+            else if (myChoice == 3)
+            {
+                System.exit(0);
+            }
+            else {
+                System.out.println("Sorry..., you made an invalid Choice");
             }
         }
 
